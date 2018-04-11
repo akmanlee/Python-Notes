@@ -48,3 +48,7 @@ for i in range(n):
 		if j!=i-j:#跳过奇数个数的中点
 			row[-j-1] = val
 print(triangle)
+#接上 一次开辟空间
+row = [1]*(i+1)
+	triangle.append(row)
+	if i == 0:
