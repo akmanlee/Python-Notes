@@ -52,3 +52,23 @@ print(triangle)
 row = [1]*(i+1)
 	triangle.append(row)
 	if i == 0:
+
+冒泡法实现
+num_list = [1,9,8,7,6,5,4,3,2]
+length = len (num_list)
+count_swap = 0
+flag = False
+count = 0
+#bubble sort
+for i in range(length):
+	for j in range(length-i-1):
+		if num_list[j]>num_list[j+1]:
+			a = num_list[j]
+			num_list[j]=num_list[j+1]
+			num_list[j+1]=a
+			flag = True #swapped
+			count_swap += 1
+			count += 1
+	if not flag:
+		break
+print(num_list,count_swap,count)
