@@ -73,7 +73,7 @@ for i in range(length):
 		break
 print(num_list,count_swap,count)
 
-#高阶函数
+#高阶函数实现sorted排序
 lst = [2,4,6,8,5,4,3,1]
 #sorted newlist
 
