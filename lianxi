@@ -72,3 +72,20 @@ for i in range(length):
 	if not flag:
 		break
 print(num_list,count_swap,count)
+
+#高阶函数
+lst = [2,4,6,8,5,4,3,1]
+#sorted newlist
+
+def sort(lst , fn=lambda a,b:a>b):
+    newlist = []
+    for x in lst:
+        for i,y in enumerate(newlist):
+            if fn(x,y):
+                newlist.insert(i , x)
+                break
+        else:
+                newlist.append(x)
+    return (newlist)
+
+print(sort(lst))
