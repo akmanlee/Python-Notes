@@ -89,3 +89,20 @@ def sort(lst , fn=lambda a,b:a>b):
     return (newlist)
 
 print(sort(lst))
+
+#类 的 实例化简单代码
+class MyClass:
+	"""a sb """
+	x = 'abc' #类属性
+	
+	def foo(self): #类属性foo,也是方法
+		print(id(self))
+		return self
+		
+
+print(MyClass.x)
+a = MyClass() #实例化 初始化
+print(a.x)
+print(a.foo())
+
+print(id(a))
