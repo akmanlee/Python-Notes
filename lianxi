@@ -106,3 +106,19 @@ print(a.x)
 print(a.foo())
 
 print(id(a))
+
+
+
+	
+#装饰一个类 装饰器
+def setnameproperty(name):
+	def wrapper(cls):
+		cls.NAME = name
+		return cls
+	return wrapper
+	
+@setnameproperty('MY CLASS')
+class MyClass:
+	pass
+	
+print(MyClass.__dict__)
