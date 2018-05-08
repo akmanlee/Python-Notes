@@ -122,3 +122,29 @@ class MyClass:
 	pass
 	
 print(MyClass.__dict__)
+
+
+#装饰器 及 调用
+import datetime
+import time
+
+def logger(fn):
+	def wrap(*args, **kwargs):
+		#before 功能增强
+		print("args={},kwargs={}".format(args,kwargs))
+		start=datetime.datetime.now()
+		ret = fn(*args,**kwargs)
+		#after 功能增强
+		delta = datetime.datetime.now()-start
+		print("function {} took {}s".format(fn.__name__,delta.total_seconds()))
+		return ret
+	return wrap
+	
+	
+@logger  #相当于add = logger(add)
+def add(x,y):
+	print('=====call add=====')
+	time.sleep(2)
+	return x + y 
+	
+print(add(4,y=7))
