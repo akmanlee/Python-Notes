@@ -24,3 +24,4 @@ $018/04/15字符串及各种操作（连接+，分割split partition,大小写�
 05/04 类的初始化 及实例 __init__    
 05/06 类变量 和 实例变量   
 05/07 装饰器 装饰一个类
+05/08 类方法 __init__(self) classmethod(cls) staticmethod()
