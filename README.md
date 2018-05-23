@@ -26,5 +26,5 @@ None
 05/07 装饰器 装饰一个类
 05/08 类方法 __init__(self) classmethod(cls) staticmethod()    
 05/09 访问控制 _ __   
-05/13-14私有变量 保护变量 正则表达式（准备看Linux系统基础知识）   
+05/13-14私有变量 保护变量 正则表达式（准备看Linux系统基础知识）      
 05/23Ubuntun装机 及linux基本命令
