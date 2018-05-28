@@ -27,4 +27,5 @@ None
 05/08 类方法 __init__(self) classmethod(cls) staticmethod()    
 05/09 访问控制 _ __   
 05/13-14私有变量 保护变量 正则表达式（准备看Linux系统基础知识）      
-05/23Ubuntun装机 及linux基本命令
+05/23Ubuntun装机 及linux基本命令   
+05/28看完了腾讯课堂的视频 又 找了个传智的视频 从装Ubuntu到学习Linux基础命令到Python知识准备在过一遍 浪费了很多时间，今天看到几个编辑器的应用Vim Sulime
